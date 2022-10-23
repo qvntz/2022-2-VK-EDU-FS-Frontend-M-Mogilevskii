@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    background-color: #fff;
+    color: #333;
+    font-size: 15px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: #0F0F0F;
+    padding: 10px;
+}
+
+.container {
+    height: 100%;
+}
+
+.header {
+    display: flex;
+    padding: 5px 20px;
+    border-bottom: #333333 solid 1px;
+    background: #212121;
+    color: white;
+    position: fixed;
+    width: 100vw;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.header-child {
+    display: flex;
+}
+
+.logo {
+    display: block;
+    margin-right: 15px;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+}
+.names {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.name {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.chat {
+    padding-top: 61px;
+    display: flex;
+    flex-direction: column-reverse;
+    flex-grow: 1;
+    flex-basis: 90px;
+    overflow-y: auto;
+    padding-bottom: 20px;
+    max-width: 100%;
+}
+
+.message {
+    background: #766AC8;
+    color: white;
+    align-self: flex-end;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
+.message-time {
+    font-size: 12px;
+    opacity: 0.6;
+    min-width: 45px;
+    align-self: flex-end;
+    padding-left: 10px;
+    line-height: 12px;
+}
+.friend-message {
+    align-self: flex-start;
+    background: #212121;
+}
+
+.form {
+    width: 100%;
+    display: inline-block;
+    border: 1px solid rgba(25, 25, 25, 0.32);
+    border-radius: 10px;
+    background: #212121;
+    padding: 10px;
+    opacity: 1;
+}
+
+.form-input {
+    resize: none;
+    width: 100%;
+    border-radius: 10px;
+    padding: 7px;
+    background: #212121;
+    color: white;
+    outline: none;
+}
